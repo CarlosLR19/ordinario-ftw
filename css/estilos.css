@@ -1,19 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f4f7fb;
   color: #1f2937;
+  line-height: 1.6;
 }
 
 .header {
-  background: #1d4ed8;
+  background: linear-gradient(90deg, #1d4ed8, #2563eb);
   color: white;
+  padding: 20px;
   text-align: center;
-  padding: 30px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.header p {
+  margin: 8px 0 0;
+  font-size: 1rem;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.16);
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  background: white;
+  color: #1d4ed8;
 }
 
 .contenedor {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
   padding: 20px;
 }
@@ -26,24 +64,36 @@ body {
   flex-wrap: wrap;
   background: white;
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 14px;
   margin-bottom: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .hero-texto {
-  flex: 1;
+  flex: 1 1 300px;
+}
+
+.hero-texto h2 {
+  margin-top: 0;
+  color: #1d4ed8;
+}
+
+.hero-imagen {
+  flex: 1 1 260px;
+  text-align: center;
 }
 
 .hero-imagen img {
-  max-width: 280px;
-  width: 100%;
-  border-radius: 12px;
+  max-width: 100%;
+  width: 280px;
+  border-radius: 14px;
+  display: block;
+  margin: auto;
 }
 
 .menu {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
   gap: 15px;
 }
 
@@ -52,15 +102,49 @@ body {
   text-align: center;
   padding: 25px 15px;
   background: white;
-  border-radius: 12px;
+  border-radius: 14px;
   text-decoration: none;
   color: #1d4ed8;
   font-weight: bold;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: 0.3s;
+  border: 2px solid transparent;
 }
 
 .card:hover {
   background: #1d4ed8;
   color: white;
+  transform: translateY(-3px);
+}
+
+.tarjeta {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.tarjeta h2 {
+  margin-top: 0;
+  color: #1d4ed8;
+}
+
+.tarjeta ul {
+  padding-left: 20px;
+}
+
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav a {
+    width: 90%;
+    text-align: center;
+  }
 }
