@@ -1,150 +1,240 @@
+/* Configuracion general*/ 
 * {
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f7fb;
-  color: #1f2937;
-  line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
 }
 
-.header {
-  background: linear-gradient(90deg, #1d4ed8, #2563eb);
-  color: white;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+/* Parte de header */
+header {
+    background-color: #0F4C81;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
-.header h1 {
-  margin: 0;
-  font-size: 2rem;
+header img {
+    width: 120px;
+    margin-bottom: 10px;
 }
 
-.header p {
-  margin: 8px 0 0;
-  font-size: 1rem;
+header h1 {
+    font-size: 2rem;
 }
 
-.nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 15px;
+/* Navegacion */
+nav {
+    background-color: #08365c;
 }
 
-.nav a {
-  color: white;
-  text-decoration: none;
-  background: rgba(255, 255, 255, 0.16);
-  padding: 8px 14px;
-  border-radius: 8px;
-  transition: 0.3s;
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.nav a:hover {
-  background: white;
-  color: #1d4ed8;
+nav li {
+    margin: 0;
 }
 
-.contenedor {
-  max-width: 1100px;
-  margin: auto;
-  padding: 20px;
+nav a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
-.hero {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  background: white;
-  padding: 20px;
-  border-radius: 14px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+nav a:hover {
+    background-color: #1f6aa5;
 }
 
-.hero-texto {
-  flex: 1 1 300px;
+/* Contenido principal */
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
 }
 
-.hero-texto h2 {
-  margin-top: 0;
-  color: #1d4ed8;
+section {
+    margin-bottom: 40px;
 }
 
-.hero-imagen {
-  flex: 1 1 260px;
-  text-align: center;
+h2 {
+    color: #0F4C81;
+    margin-bottom: 15px;
 }
 
-.hero-imagen img {
-  max-width: 100%;
-  width: 280px;
-  border-radius: 14px;
-  display: block;
-  margin: auto;
+p {
+    margin-bottom: 15px;
 }
 
-.menu {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-  gap: 15px;
+/* Tarjetas */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
 
 .card {
-  display: block;
-  text-align: center;
-  padding: 25px 15px;
-  background: white;
-  border-radius: 14px;
-  text-decoration: none;
-  color: #1d4ed8;
-  font-weight: bold;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: 0.3s;
-  border: 2px solid transparent;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.15);
 }
 
-.card:hover {
-  background: #1d4ed8;
-  color: white;
-  transform: translateY(-3px);
+.card h3 {
+    color: #0F4C81;
+    margin-bottom: 10px;
 }
 
-.tarjeta {
-  background: white;
-  padding: 20px;
-  border-radius: 14px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+/* Tablas*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
 }
 
-.tarjeta h2 {
-  margin-top: 0;
-  color: #1d4ed8;
+th {
+    background-color: #0F4C81;
+    color: white;
+    padding: 12px;
 }
 
-.tarjeta ul {
-  padding-left: 20px;
-}
-
-@media (max-width: 600px) {
-  .header h1 {
-    font-size: 1.5rem;
-  }
-
-  .nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav a {
-    width: 90%;
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
     text-align: center;
-  }
+}
+
+tr:hover {
+    background-color: #f2f2f2;
+}
+
+/* Estado de los salones */
+
+.disponible {
+    color: green;
+    font-weight: bold;
+}
+
+.ocupado {
+    color: red;
+    font-weight: bold;
+}
+
+.mantenimiento {
+    color: orange;
+    font-weight: bold;
+}
+
+/* formularios */
+
+form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.15);
+    max-width: 500px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 20px;
+    background-color: #0F4C81;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #1f6aa5;
+}
+
+/* filtros */
+
+.filtros {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.filtros select {
+    max-width: 300px;
+}
+
+/* mensajes */
+
+.exito {
+    color: green;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+/* footer (pie de pagina) */
+
+footer {
+    background-color: #0F4C81;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* responsive */
+
+@media screen and (max-width: 768px) {
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav a {
+        text-align: center;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
 }

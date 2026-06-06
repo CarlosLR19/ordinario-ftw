@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<salones>
+    <link rel="stylesheet" href="css/estilos.css" />
+
+    <salon>
+        <numero>102</numero>
+        <capacidad>35</capacidad>
+        <edificio>A</edificio>
+        <estado>Disponible</estado>
+    </salon>
+
+    <salon>
+        <numero>103</numero>
+        <capacidad>35</capacidad>
+        <edificio>A</edificio>
+        <estado>Ocupado</estado>
+    </salon>
+
+    <salon>
+        <numero>104</numero>
+        <capacidad>35</capacidad>
+        <edificio>A</edificio>
+        <estado>Ocupado</estado>
+    </salon>
+
+    <salon>
+        <numero>105</numero>
+        <capacidad>35</capacidad>
+        <edificio>A</edificio>
+        <estado>Ocupado</estado>
+    </salon>
+
+    <salon>
+        <numero>106</numero>
+        <capacidad>35</capacidad>
+        <edificio>A</edificio>
+        <estado>Ocupado</estado>
+    </salon>
+
+    <salon>
+        <numero>111</numero>
+        <capacidad>30</capacidad>
+        <edificio>A</edificio>
+        <estado>Ocupado</estado>
+    </salon>
+
+    <salon>
+        <numero>112</numero>
+        <capacidad>30</capacidad>
+        <edificio>A</edificio>
+        <estado>Ocupado</estado>
+    </salon>
+
+    <salon>
+        <numero>113</numero>
+        <capacidad>30</capacidad>
+        <edificio>A</edificio>
+        <estado>Disponible</estado>
+    </salon>
+
+    <salon>
+        <numero>cc1</numero>
+        <capacidad>20</capacidad>
+        <edificio>A</edificio>
+        <estado>Disponible</estado>
+    </salon>
+
+    <salon>
+        <numero>cc2</numero>
+        <capacidad>28</capacidad>
+        <edificio>A</edificio>
+        <estado>Ocupado</estado>
+    </salon>
+
+    <salon>
+        <numero>cc3</numero>
+        <capacidad>35</capacidad>
+        <edificio>A</edificio>
+        <estado>Ocupado</estado>
+    </salon>
+
+    <salon>
+        <numero>F101</numero>
+        <capacidad>30</capacidad>
+        <edificio>B</edificio>
+        <estado>Disponible</estado>
+    </salon>
+
+    <salon>
+        <numero>F102</numero>
+        <capacidad>30</capacidad>
+        <edificio>B</edificio>
+        <estado>Ocupado</estado>
+    </salon>
+
+    <salon>
+        <numero>F103</numero>
+        <capacidad>30</capacidad>
+        <edificio>B</edificio>
+        <estado>Ocupado</estado>
+    </salon>
+
+    <salon>
+        <numero>F402</numero>
+        <capacidad>30</capacidad>
+        <edificio>B</edificio>
+        <estado>Ocupado</estado>
+    </salon>
+
+    <salon>
+        <numero>F403</numero>
+        <capacidad>30</capacidad>
+        <edificio>B</edificio>
+        <estado>Ocupado</estado>
+    </salon>
+
+    <salon>
+        <numero>Aula TC</numero>
+        <capacidad>30</capacidad>
+        <edificio>B</edificio>
+        <estado>Ocupado</estado>
+    </salon>
+
+    <script src="../js/script.js"></script>
+
+</salones>
