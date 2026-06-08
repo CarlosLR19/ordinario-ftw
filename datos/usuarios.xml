@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <usuarios>
-    <link rel="stylesheet" href="css/estilos.css" />
-    
     <usuario>
         <nombre>user</nombre>
         <password>1234</password>

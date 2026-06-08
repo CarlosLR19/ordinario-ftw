@@ -1,36 +1,100 @@
-<h1>
-Disponibilidad de Salones
-</h1>
-<select id="filtroEstado">
+<!DOCTYPE html>
+<html lang="es">
 
-<option value="">
-Todos
-</option>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disponibilidad de Salones</title>
 
-<option value="Disponible">
-Disponible
-</option>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
 
-<option value="Ocupado">
-Ocupado
-</option>
+<body>
 
-</select>
-<table>
+    <header>
+        <h1>Disponibilidad de Salones</h1>
+        <p>Consulta el estado actual de los salones de la facultad</p>
+    </header>
 
-<thead>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="salones.html">Salones</a></li>
+            <li><a href="disponibilidad.html">Disponibilidad</a></li>
+            <li><a href="horarios.html">Horarios</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+            <a href="login.html">Iniciar Sesion</a>
+        </ul>
+    </nav>
 
-<tr>
-<th>Salón</th>
-<th>Capacidad</th>
-<th>Edificio</th>
-<th>Estado</th>
-</tr>
+    <main>
 
-</thead>
+        <section>
 
-<tbody id="tablaSalones">
+            <h2>Filtrar por estado</h2>
 
-</tbody>
+            <div class="filtros">
 
-</table>
+                <label for="filtroEstado">
+                    Estado del salón
+                </label>
+
+                <select id="filtroEstado">
+
+                    <option value="">
+                        Todos
+                    </option>
+
+                    <option value="Disponible">
+                        Disponible
+                    </option>
+
+                    <option value="Ocupado">
+                        Ocupado
+                    </option>
+
+                </select>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <h2>Listado de Salones</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Salón</th>
+                        <th>Capacidad</th>
+                        <th>Edificio</th>
+                        <th>Estado</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="tablaSalones">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            Proyecto Final - Fundamentos de Tecnologías Web 2026
+        </p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

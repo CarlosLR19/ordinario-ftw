@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Acceso al Sistema</h1>
+        <p>Consulta de disponibilidad de salones</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="salones.html">Salones</a></li>
+            <li><a href="disponibilidad.html">Disponibilidad</a></li>
+            <li><a href="horarios.html">Horarios</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+            <li><a href="login.html">Iniciar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+
+            <h2>Login</h2>
+
+            <form id="loginForm">
+
+                <label for="usuario">
+                    Usuario
+                </label>
+
+                <input
+                    type="text"
+                    id="usuario"
+                    required>
+
+                <label for="password">
+                    Contraseña
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    required>
+
+                <button type="submit">
+                    Ingresar
+                </button>
+
+            </form>
+
+            <p id="mensajeLogin"></p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            Proyecto Final - FTW 2026
+        </p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

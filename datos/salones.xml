@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <salones>
-    <link rel="stylesheet" href="css/estilos.css" />
-
     <salon>
         <numero>102</numero>
         <capacidad>35</capacidad>
@@ -121,7 +119,4 @@
         <edificio>B</edificio>
         <estado>Ocupado</estado>
     </salon>
-
-    <script src="../js/script.js"></script>
-
 </salones>
