@@ -1,3 +1,5 @@
+user 1234 //para validar usuario
+
 # ordinario-ftw
 # Sistema de Disponibilidad de Salones
 
